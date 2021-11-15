@@ -6,11 +6,6 @@ zplug "zplug/zplug"
 
 export EDITOR="vim"
 
-#if ! zplug status; then
-#zplug status
-zplug update
-#fi
-
 if ! zplug check; then
 	zplug install
 else 
