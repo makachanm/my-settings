@@ -7,9 +7,9 @@ zplug "zplug/zplug"
 export EDITOR="vim"
 
 if ! zplug check; then
-	zplug install
-else 
-	zplug update
+        zplug install
+else
+        zplug update
 fi
 
 zplug load
@@ -22,5 +22,6 @@ setopt autocd
 sleep 1
 
 export UPTIME=$(uptime -p)
+export KERVER=$(uname -r)
 clear
-cowsay "Welcome back, $USER. after you turn on the system: $UPTIME ."
+cowsay "Welcome back, $USER. after you turn on the system: $UPTIME . Currunt kernel version: $KERVER"
